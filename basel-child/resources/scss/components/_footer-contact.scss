@@ -1,0 +1,60 @@
+.footer-contact {
+  .vc_column-inner {
+    padding-top: 0 !important;
+
+    > .wpb_wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @include sm {
+        flex-direction: column;
+      }
+
+      h3 {
+        color: white;
+        font-size: 26px;
+        margin-bottom: 0;
+
+        @include sm {
+          text-align: center!important;
+        }
+      }
+
+      p {
+        font-size: 12px;
+        text-align: center;
+        color: white;
+
+        @include sm {
+          text-align: center!important;
+        }
+      }
+    }
+  }
+
+  .wpb_text_column {
+    margin: 30px 25px 30px 0;
+
+    @include sm {
+      margin: 30px 0;
+    }
+  }
+
+  .basel-button-wrapper {
+    margin: 30px 0 15px;
+
+    a {
+      font-size: 12px;
+      color: white;
+      border: 2px solid white;
+      padding: 11px 40px;
+
+      &:hover {
+        color: white;
+        border: 2px solid white;
+        background: transparent;
+      }
+    }
+  }
+}

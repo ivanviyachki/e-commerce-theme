@@ -1,0 +1,94 @@
+// --------------------------------------------------------------------------------------------
+// YITH WISHLIST
+// --------------------------------------------------------------------------------------------
+
+.yith-wcwl-add-to-wishlist {
+	display:block;
+	margin-top:0;
+
+		i {
+			display: none; //hide font-awesome icon
+		}
+
+		a {
+			display: inline-block;
+			vertical-align: middle;
+			text-align: center;
+			font-size: 14px;
+			line-height: 1.5;
+			color:#4E4E4E;
+
+			&:hover,
+			&:focus {
+				text-decoration:none;
+			}
+
+			&:before {
+				content: "\e08a";
+				font-size: 18px;
+				vertical-align: middle;
+				margin-right: 2px;
+				display: inline-block;
+				font-family: 'Simple-Line-Icons';
+				-webkit-transition: all 0.2s;
+				transition: all 0.2s;
+			}
+
+			&:after {
+				@include loader(15px);
+				margin-left: 10px;
+				opacity:0;
+				visibility:hidden;
+			}
+		}
+
+		.ajax-loading {
+			display: none!important;
+			height: 0!important;
+			width: 0!important;
+		}
+
+		.feedback {
+			display: none;
+		}
+
+	.yith-wcwl-add-button {
+
+
+		&.feid-in {
+
+			a {
+				&:after {
+					opacity:1;
+					visibility:visible;
+					@include act-loader;
+				}
+			}
+		}
+	}
+
+	.clear {
+		display: none;
+	}
+
+	+ .clear {
+		display: none;
+	}
+}
+
+// ------------------------------------------
+// WISHLIST IN HOVER EFFECT
+// ------------------------------------------
+
+.yith-wcwl-share {
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+// ------------------------------------------
+// MESSAGE POPUP
+// ------------------------------------------
+
+#yith-wcwl-popup-message {
+	display: none!important;
+}

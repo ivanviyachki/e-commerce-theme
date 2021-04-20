@@ -1,0 +1,41 @@
+/*==== Theme Colors ====*/
+
+$colors: (
+  'black'         :     #000000,
+  'white'         :     #FFFFFF,
+  'dark-white'    :     #F2F2F2,
+  'muted-white'   :     #F7F7F7,
+  'warning'       :     #D69A00,
+  'success'       :     #225B14,
+  'error'         :     #FF451C,
+  'primary'       :     #008751,
+  'text'          :     #1E2329,
+  'gray'          :     #657881,
+  'muted-gray'    :     #F1F1F1,
+  'red'           :     #E51836,
+  'light-green'   :     #C2E2CA,
+  'light-apricot' :     #F6ECCA,
+  'light-blue'    :     #DAE3FF,
+  'apricot'       :     #FBDABF,
+  'purple'        :     #232756,
+);
+
+/*==== Icons ====*/
+
+$icon-sizes: (
+  'xs'  : 10px,
+  'sm'  : 16px,
+  '20'  : 20px,
+  'md'  : 24px,
+  'lg'  : 30px,
+  'xl'  : 36px,
+);
+
+$icon-colors: (
+  'green' : #008751,
+  'brown' : #996958,
+  'gray'  : #6A6868,
+  'red'   : #E51836,
+  'dark'  : #1E2329,
+  'white' : #FFFFFF,
+);

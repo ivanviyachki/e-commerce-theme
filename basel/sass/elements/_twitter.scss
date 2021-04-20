@@ -1,0 +1,53 @@
+// --------------------------------------------------------------------------------------------
+// TWITTER
+// --------------------------------------------------------------------------------------------
+
+.basel-twitter-element {
+
+	.twitter-post {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: stretch;
+		-ms-flex-align: stretch;
+		align-items: stretch;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		margin-bottom: 15px;
+		padding-bottom: 15px;
+		border-bottom: 1px solid rgba(124, 124, 124, 0.15);
+
+
+		&:last-child {
+			margin-bottom: 0;
+			padding-bottom: 0;
+			border-bottom: none;
+		}
+	}
+
+	.twitter-image-wrapper {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 auto;
+		flex: 0 0 auto;
+		margin-right: 10px;
+	}
+
+	.twitter-content-wrapper {
+		-webkit-box-flex: 1;
+		-ms-flex: 1 1 auto;
+		flex: 1 1 auto;
+	}
+
+	.stt-em {
+		display: block;
+		margin-top: 5px;
+		font-size: 10px;
+	}
+
+	.color-scheme-light &,
+	.basel-dark & {
+		border-color: $dark-border-color;
+	}
+}

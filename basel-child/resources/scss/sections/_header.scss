@@ -1,0 +1,49 @@
+.top-bar-left {
+  display: flex;
+  justify-content: space-between;
+  margin: 4px;
+}
+
+.secondary-header {
+  padding-top: 20px;
+  border-top: 1px solid #D6D6D6;
+}
+
+.top-bar-left .fa-facebook {
+  font-size: 12px;
+}
+
+.header-categories .main-nav .menu li.menu-item-design-full-width > .sub-menu-dropdown {
+  margin-top: -105px;
+}
+
+.main-nav .menu > li.current-menu-item > a {
+  border-bottom: 1px solid #232756;
+}
+
+.main-nav .menu>li>a {
+  display: inline;
+  padding: 0 0 10px 0;
+  margin: 0 13px;
+}
+
+.item-event-hover {
+  a:hover {
+    border-bottom: 1px solid #232756;
+  }
+}
+
+.wrapp-header {
+    .right-column {
+      display: none;
+    }
+}
+
+.menu-label-sale {
+  background-color: #2DA3C9;
+
+  &:after {
+    color: #2DA3C9;
+
+  }
+}

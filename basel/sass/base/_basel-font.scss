@@ -1,0 +1,68 @@
+// ------------------------------------------------------------------------------------------------
+// BASEL FONT
+// ------------------------------------------------------------------------------------------------ 
+
+$font-family: "basel-font";
+
+$icon-search: 902;
+$icon-star: 905;
+$icon-star-empty: 906;
+$icon-ok: 90c;
+$icon-remove: 90d;
+$icon-home: 915;
+$icon-bookmark: 92e;
+$icon-play: 94b;
+$icon-chevron-left: 953;
+$icon-chevron-right: 954;
+$icon-remove-sign: 957;
+$icon-warning-sign: 971;
+$icon-shopping-cart: 97a;
+$icon-reorder: 9c9;
+$icon-caret-up: 9d8;
+$icon-caret-left: 9d9;
+$icon-envelope-alt: 9e1; // NOTE PROBLEM
+$icon-angle-left: 104;
+$icon-angle-right: 105;
+$icon-angle-down: 107;
+$icon-info: 129;
+$icon-shopping-art-down: 218;
+$icon-shopping-bag: 290;
+$icon-quote: 10e;
+$icon-heart-o: 98a;
+$icon-heart: 904;
+$icon-calendar: 973;
+$icon-edit: 944;
+$icon-bell: 9f3;
+$icon-user: 907;
+$icon-lock: 923;
+$icon-vk: 189;
+$icon-facebook-f: 99a;
+$icon-google-plus: 9d5;
+$icon-facebook-official: 982;
+$icon-angle-up: 106;
+
+$icon-caret-down: 9d7; // NOTE SEARCH MIXIN!
+$icon-caret-right: 9da; // NOTE SEARCH MIXIN!
+
+@function icon-name($i) {
+	@return unquote("\"\\f#{$i}\"");
+}
+
+// @include font-icon-content($i);
+
+@mixin font-icon-content($i) {
+	content: unquote("\"\\f#{$i}\"");
+}
+
+// @include font-icon-base;
+
+@mixin font-icon-base {
+	font-family: $font-family;
+}
+
+// @include font-icon($i);
+
+@mixin font-icon($i) {
+	@include font-icon-content($i);
+	@include font-icon-base;
+}

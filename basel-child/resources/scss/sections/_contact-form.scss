@@ -1,0 +1,58 @@
+.contact-form {
+    .title-wrapper.basel-title-size-default .title  {
+        font-size: 24px;
+    }
+
+    p, label {
+        color: #6C6C6C;
+        font-size: 12px;
+    }
+
+    .contact-btn {
+        background-color: white;
+        border: 1px solid #575757;
+        color: #575757;
+
+        &:hover {
+            background-color: white;
+            color: #575757;
+        }
+    }
+
+    .wpcf7-list-item-label {
+        a {
+            color: #232756;
+            text-decoration: underline;
+            font-weight: 600;
+        }
+    }
+}
+
+.request-quote {
+    .wpcf7-submit{
+        background: transparent;
+        border: 1px solid #575757;
+        font-weight: 700;
+
+        &:hover{
+            background: transparent;
+            border: 1px solid #575757;
+            font-weight: 700;
+            color: #575757;
+        }
+    }
+
+    form {
+        width: 770px;
+        margin: auto;
+
+        @include lg {
+            width: 100%;
+        }
+    }
+
+    p, label {
+        color: #6C6C6C;
+        font-size: 12px;
+    }
+}

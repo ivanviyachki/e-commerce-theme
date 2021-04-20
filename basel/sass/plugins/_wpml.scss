@@ -1,0 +1,78 @@
+// --------------------------------------------------------------------------------------------
+// WPML
+// --------------------------------------------------------------------------------------------
+
+// ----------------------------
+// MENU ITEM SELECTOR
+// ----------------------------
+
+.basel-navigation {
+
+	.menu {
+
+		.menu-item.wpml-ls-current-language {
+			
+			.sub-menu-dropdown {
+				width: 200px;
+			}
+		}		
+	}
+}
+
+.topbar-menu {
+
+	.wpml-ls-current-language {
+		
+		.sub-menu-dropdown {
+			width: auto;
+			min-width: 150px;
+		}
+	}
+}
+
+// ----------------------------
+// SELECTOR MY ACC AFTER PAGE
+// ----------------------------
+
+.woocommerce-account {
+
+	.woocommerce + .icl_post_in_other_langs {
+		float: left;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+// ----------------------------
+// SELECTOR FOOTER
+// ----------------------------
+
+.wpml-ls-statics-footer {
+	
+	&.wpml-ls {
+		margin-bottom: 0;
+	}
+}
+
+// ----------------------------
+// CURRENCY SWITCHER
+// ----------------------------
+
+.woocommerce {
+
+	.wcml_currency_switcher.product {
+		margin-top: 5px;
+	}
+}
+
+.product-design-default,
+.product-design-compact {
+
+	.wcml-vertical-list,
+	.wcml-horizontal-list {
+
+		&.product {
+			margin-left: -0.5em;
+		}
+	}
+}

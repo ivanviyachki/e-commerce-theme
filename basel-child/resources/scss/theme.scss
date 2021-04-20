@@ -1,0 +1,33 @@
+// Global
+
+@import "mixins";
+@import "variables";
+
+// Sections
+
+@import "sections/header";
+@import "sections/footer";
+@import "sections/accordion";
+@import "sections/info-box";
+@import "sections/contact-form";
+@import "sections/partners";
+@import "sections/privacy-policy";
+@import "sections/post-content";
+@import "sections/product";
+
+
+// Pages
+
+@import "pages/home";
+@import "pages/blog";
+
+// Components
+
+@import "components/global";
+@import "components/buttons";
+@import "components/inputs";
+@import "components/quotes";
+@import "components/projects";
+@import "components/testimonial";
+@import "components/footer-contact";
+@import "components/page-title";

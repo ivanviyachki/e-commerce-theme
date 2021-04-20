@@ -1,0 +1,36 @@
+.btn {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  &--outline {
+    background: transparent;
+    border: 2px solid map-get($colors, 'white');
+    color: map-get($colors, 'white');
+
+    &:hover {
+      background: map-get($colors, 'white');
+      color: map-get($colors, 'purple');
+      border: 2px solid map-get($colors, 'white');
+    }
+  }
+
+  &--filled {
+    color: map-get($colors, 'purple');
+    background: map-get($colors, 'white');
+    border: 2px solid map-get($colors, 'white');
+
+    &:hover {
+      background: transparent;
+      border: 2px solid map-get($colors, 'white');
+      color: map-get($colors, 'white');
+    }
+  }
+}
+
+.basel-button-wrapper {
+  @include sm {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}

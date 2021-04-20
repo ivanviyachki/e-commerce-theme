@@ -1,0 +1,65 @@
+// --------------------------------------------------------------------------------------------
+// WISHLIST
+// --------------------------------------------------------------------------------------------
+
+.basel-wishlist-content {
+
+	.products {
+		
+		.basel-wishlist-btn {
+			display: none;
+		}
+	}
+}
+
+.basel-remove-button-wrap {
+	text-align: center;
+}
+
+.basel-wishlist-heading-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 8px;
+	margin-bottom: 25px;
+}
+
+.basel-wishlist-title,
+.basel-wishlist-share {
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+.basel-wishlist-title {
+	text-transform: uppercase;
+	margin-right: 5px;
+}
+
+.basel-wishlist-share {
+	display: flex;
+	align-items: center;
+
+	> span {
+		margin-right: 15px;
+		font-size: 13px;
+		letter-spacing: 0.3px;
+		margin-top: 5px;
+
+		&:after {
+			content: ":";
+		}
+	}
+}
+
+// ---------------------------------
+// EMPTY WISHLIST
+// ---------------------------------
+
+.basel-empty-wishlist {
+	@extend %basel-empty-page-style;
+	
+	&:before {
+		content: "\e08a";
+	}
+}
